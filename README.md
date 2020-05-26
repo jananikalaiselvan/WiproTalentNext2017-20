@@ -1,1 +1,0 @@
-# WiproTalentNext2017-20

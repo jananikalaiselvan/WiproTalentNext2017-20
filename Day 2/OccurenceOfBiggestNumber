@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in); 
+	    int[] arr=new int[10];
+	    int[] a=new int[10];
+	    int i=0;
+	    int max=0,count=0;
+	    while(i<10)
+	    {
+	        arr[i]=sc.nextInt();
+	        if(max<arr[i])
+	        {
+	            max=arr[i];
+	        }
+	        i++;
+	    }
+	    for(i=0;i<10;i++)
+	    {
+	        if(arr[i]==max)
+	        {
+	            count++;
+	        }
+	    }
+	    System.out.println(count);
+	 }
+}

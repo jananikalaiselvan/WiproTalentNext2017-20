@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Main
+{
+   public static void main(String[] args)
+   {
+		  Scanner d = new Scanner(System.in);
+		  System.out.println("1. Add\n2. Sub");
+		int option = d.nextInt();
+		
+		int input1;
+		int input2;
+		int res;
+		
+		if (option == 1) {
+			input1 = d.nextInt();
+			input2 = d.nextInt();
+			res = input1 + input2;
+		} 
+    else {
+			input1 = d.nextInt();
+			input2 = d.nextInt();
+			res = input1 - input2;
+		}
+		
+		System.out.println(res);
+		
+		System.out.println("Do you want to continue? Y or N");
+		
+		d.nextLine();		
+		option = d.nextLine().charAt(0);
+		
+		if (choice == 'Y' || choice == 'y') main(args);
+		
+		d.close();
+	}
+
+}

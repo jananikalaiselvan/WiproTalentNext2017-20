@@ -1,0 +1,28 @@
+impot=rt java.util.*;
+class Main {  
+  public static void main(String args[]){
+    int a[] = new int[]{1,2,3,4,5};
+    int max = Maximum(a);
+    System.out.println(max);
+    int min = Minimum(a);
+    System.out.println(min);
+  }
+  public static int Maximum(int[] inputArray){ 
+    int maxValue = inputArray[0]; 
+    for(int i=1;i < inputArray.length;i++){ 
+      if(inputArray[i] > maxValue){ 
+         maxValue = inputArray[i]; 
+      } 
+    } 
+    return maxValue; 
+  }
+  public static int Minimum(int[] inputArray){ 
+    int minValue = inputArray[0]; 
+    for(int i=1;i<inputArray.length;i++){ 
+      if(inputArray[i] < minValue){ 
+        minValue = inputArray[i]; 
+      } 
+    } 
+    return minValue; 
+  } 
+}
